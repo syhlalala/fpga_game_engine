@@ -1,0 +1,99 @@
+label_program
+rl 2 0
+rh 2 0
+label_big
+cpy 3 2
+rl 4 400
+rh 4 400
+add 2 4
+cpy 4 1
+rl 7 label_if_1
+rh 7 label_if_1
+jumpif 7 4
+rl 5 1
+rh 5 1
+sub 2 5
+label_if_1
+rl 5 1
+rh 5 1
+shr 4 5
+rl 7 label_if_2
+rh 7 label_if_2
+jumpif 7 4
+rl 5 1
+rh 5 1
+add 2 5
+label_if_2
+rl 5 1
+rh 5 1
+shr 4 5
+rl 7 label_if_3
+rh 7 label_if_3
+jumpif 7 4
+rl 5 20
+rh 5 20
+sub 2 5
+label_if_3
+rl 5 1
+rh 5 1
+shr 4 5
+rl 7 label_if_4
+rh 7 label_if_4
+jumpif 7 4
+rl 5 20
+rh 5 20
+add 2 5
+label_if_4
+rl 4 399
+rh 4 399
+sml 4 2
+not 4
+rl 7 label_if_5
+rh 7 label_if_5
+jumpif 7 4
+rl 4 400
+rh 4 400
+sub 2 4
+label_if_5
+rl 4 399
+rh 4 399
+sml 4 2
+not 4
+rl 7 label_if_6
+rh 7 label_if_6
+jumpif 7 4
+rl 4 400
+rh 4 400
+sub 2 4
+label_if_6
+rl 4 0
+rh 4 0
+label_empty
+gpu 3 4
+label_empty
+rl 4 30
+rh 4 30
+label_empty
+gpu 2 4
+label_empty
+label_wait_1
+cpy 3 0
+rl 4 0
+rh 4 0
+eq 4 3
+not 4
+rl 7 label_wait_1
+rh 7 label_wait_1
+jumpif 7 4
+label_wait_2
+cpy 3 0
+rl 4 0
+rh 4 0
+eq 4 3
+not 4
+rl 7 label_wait_2
+rh 7 label_wait_2
+jumpif 7 4
+rl 7 label_big
+rh 7 label_big
+jump 7

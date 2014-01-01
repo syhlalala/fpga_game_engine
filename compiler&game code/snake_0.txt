@@ -1,0 +1,620 @@
+	i 1
+	j 1
+	k 1
+	score 1
+	map 400
+	snake 400
+	head 1
+	tail 1
+	state 1
+end
+
+label_init
+
+	_2 = i
+	_3 = 0
+	write _3 _2
+	label_for_i_1
+		_2 = i
+		read _3 _2
+		
+		_4 = 20
+		_4 += _3
+		_2 = map
+		_4 += _2
+		_2 = #r
+		write _2 _4
+		
+		_4 = 380
+		_4 += _3
+		_2 = map
+		_4 += _2
+		_2 = #r
+		write _2 _4
+		
+		_2 = 0
+		_2 == _3
+		jumpif label_endofnot0 _2
+		_4 = 20
+		_4 *= _3
+		_2 = map
+		_4 += _2
+		
+		_2 = #r
+		write _2 _4
+		_2 = 19
+		_4 += _2
+		_2 = #r
+		write _2 _4
+		
+		label_endofnot0
+		
+		_2 = 1
+		_3 += _2
+		_2 = i
+		write _3 _2
+		
+		_2 = 20
+		_3 < _2
+	jumpif label_for_i_1 _3
+	
+	
+	_4 = map
+	_3 = 2
+	_3 += _4
+	_2 = #S
+	write _2 _3
+	_3 = 3
+	_3 += _4
+	_2 = #C
+	write _2 _3
+	_3 = 4
+	_3 += _4
+	_2 = #O
+	write _2 _3
+	_3 = 5
+	_3 += _4
+	_2 = #R
+	write _2 _3
+	_3 = 6
+	_3 += _4
+	_2 = #E
+	write _2 _3
+
+	
+	_4 = snake
+	_3 = 209
+	_3 += _4
+	_2 = 7
+	write _2 _3
+	_3 = 210
+	_3 += _4
+	_2 = 3
+	write _2 _3
+	_3 = 211
+	_3 += _4
+	_2 = 11
+	write _2 _3
+	
+	
+	_2 = state
+	_3 = 1
+	write _3 _2
+	
+label_big
+
+	_2 = state
+	read _3 _2
+	jumpif label_game_start _3
+
+			_6 = 0
+
+			_2 = i
+			_3 = 2
+			write _3 _2
+			label_for_i_3
+				_2 = j
+				_3 = 1
+				write _3 _2
+				label_for_j_3
+					_2 = i
+					read _3 _2
+					_4 = 20
+					_3 *= _4
+					_2 = j
+					read _4 _2
+					_3 += _4
+					
+					_4 = snake
+					_3 += _4
+					
+					read _4 _3
+					
+					_2 = 13
+					_2 == _4
+					_6 += _2
+					
+					_2 = 4
+					_2 < _4
+					_3 = 9
+					_3 > _4
+					_2 &= _3
+					! _2
+					jumpif label_is_head _2
+					_2 = i
+					read _5 _2
+					_4 = 20
+					_5 *= _4
+					_2 = j
+					read _4 _2
+					_5 += _4
+					_2 = head
+					write _5 _2
+					label_is_head
+					
+					_2 = i
+					read _3 _2
+					_4 = 20
+					_3 *= _4
+					_2 = j
+					read _4 _2
+					_3 += _4
+					
+					_4 = snake
+					_3 += _4
+					
+					read _4 _3
+					
+					_2 = 8
+					_2 < _4
+					_3 = 13
+					_3 > _4
+					_2 &= _3
+					! _2
+					jumpif label_is_tail _2
+					_2 = i
+					read _5 _2
+					_4 = 20
+					_5 *= _4
+					_2 = j
+					read _4 _2
+					_5 += _4
+					_2 = tail
+					write _5 _2
+					label_is_tail
+					
+					
+					_2 = j
+					read _3 _2
+					_2 = 1
+					_3 += _2
+					_2 = j
+					write _3 _2
+					_2 = 19
+					_3 < _2
+				jumpif label_for_j_3 _3
+				
+				_2 = i
+				read _3 _2
+				_2 = 1
+				_3 += _2
+				_2 = i
+				write _3 _2
+				_2 = 19
+				_3 < _2
+			jumpif label_for_i_3 _3
+
+				_2 = head
+				read _5 _2
+						
+				_2 = snake
+				_2 += _5
+				read _3 _2
+				_2 = _1
+				jumpif label_left _2
+					_4 = 8
+					_4 == _3
+					jumpif label_left _4
+						_3 = 7
+				label_left
+				
+				_4 = 1
+				_2 >>= _4
+				jumpif label_right _2
+					_4 = 7
+					_4 == _3
+					jumpif label_right _4
+						_3 = 8
+				label_right
+				
+				_4 = 1
+				_2 >>= _4
+				jumpif label_up _2
+					_4 = 6
+					_4 == _3
+					jumpif label_up _4
+						_3 = 5
+				label_up
+				
+				_4 = 1
+				_2 >>= _4
+				jumpif label_down _2
+					_4 = 5
+					_4 == _3
+					jumpif label_down _4
+						_3 = 6
+				label_down
+			
+				_2 = snake
+				_2 += _5
+				write _3 _2
+				
+				_4 = _5
+				
+				_2 = 5
+				_2 == _3
+				! _2
+				jumpif label_up1 _2
+					_2 = 20
+					_4 -= _2
+				label_up1
+				
+				_2 = 6
+				_2 == _3
+				! _2
+				jumpif label_down1 _2
+					_2 = 20
+					_4 += _2
+				label_down1
+				
+				_2 = 7
+				_2 == _3
+				! _2
+				jumpif label_left1 _2
+					_2 = 1
+					_4 -= _2
+				label_left1
+			
+				_2 = 8
+				_2 == _3
+				! _2
+				jumpif label_right1 _2
+					_2 = 1
+					_4 += _2
+				label_right1
+				
+				
+				_2 = map
+				_2 += _4
+				read _7 _2
+				_2 = 0
+				_3 = #b
+				_2 == _7
+				_3 == _7
+				_2 |= _3
+				
+				! _2
+				jumpif label_game_over _2
+					_7 = _3
+					
+					_2 = snake
+					_2 += _5
+					read _3 _2
+				
+					_2 = snake
+					_2 += _4
+					write _3 _2
+					_4 = 4
+					_3 -= _4
+					_2 = snake
+					_2 += _5
+					write _3 _2
+					
+					_3 = _7
+					
+					_2 = score
+					read _4 _2
+					_4 += _3
+					write _4 _2
+					
+					jumpif label_game_start_end _3
+				
+				
+				jump label_game_over_end
+				label_game_over
+					_2 = state
+					_3 = 1
+					write _3 _2
+					jump label_game_start_end
+				label_game_over_end
+				
+				
+				
+				
+				
+				
+				_2 = tail
+				read _5 _2
+				
+				_2 = snake
+				_2 += _5
+				read _3 _2
+					
+				_4 = _5
+				
+				_2 = 9
+				_2 == _3
+				! _2
+				jumpif label_up3 _2
+					_2 = 20
+					_4 -= _2
+				label_up3
+				
+				_2 = 10
+				_2 == _3
+				! _2
+				jumpif label_down3 _2
+					_2 = 20
+					_4 += _2
+				label_down3
+				
+				_2 = 11
+				_2 == _3
+				! _2
+				jumpif label_left3 _2
+					_2 = 1
+					_4 -= _2
+				label_left3
+			
+				_2 = 12
+				_2 == _3
+				! _2
+				jumpif label_right3 _2
+					_2 = 1
+					_4 += _2
+				label_right3
+
+				
+				_2 = snake
+				_2 += _4
+				read _3 _2
+				_2 = 8
+				_3 += _2
+				_2 = snake
+				_2 += _4
+				write _3 _2
+				
+						
+				_2 = snake
+				_2 += _5
+				jumpif label_food _6	
+					_3 = 13
+					jump label_food_else
+				label_food
+					_3 = 0
+				label_food_else
+				write _3 _2
+	
+		jump label_game_start_end
+	label_game_start
+			_3 = 15
+			_3 = _1
+			
+			jumpif label_game_start_end _3
+			
+			_2 = state
+			_3 = 0
+			write _3 _2
+			
+			
+			_2 = i
+			_3 = 2
+			write _3 _2
+			label_for_i_4
+				_2 = j
+				_3 = 1
+				write _3 _2
+				label_for_j_4
+					_2 = i
+					read _3 _2
+					_4 = 20
+					_3 *= _4
+					_2 = j
+					read _4 _2
+					_3 += _4
+					
+					_4 = snake
+					_4 += _3
+					
+					_2 = 0
+					write _2 _4
+					
+					
+					_2 = j
+					read _3 _2
+					_2 = 1
+					_3 += _2
+					_2 = j
+					write _3 _2
+					_2 = 19
+					_3 < _2
+				jumpif label_for_j_4 _3
+				
+				_2 = i
+				read _3 _2
+				_2 = 1
+				_3 += _2
+				_2 = i
+				write _3 _2
+				_2 = 19
+				_3 < _2
+			jumpif label_for_i_4 _3
+			
+			_4 = snake
+			_3 = 209
+			_3 += _4
+			_2 = 7
+			write _2 _3
+			_3 = 210
+			_3 += _4
+			_2 = 3
+			write _2 _3
+			_3 = 211
+			_3 += _4
+			_2 = 11
+			write _2 _3
+			
+		
+	label_game_start_end
+		
+	_2 = i
+	_3 = 2
+	write _3 _2
+	label_for_i_2
+		_2 = j
+		_3 = 1
+		write _3 _2
+		label_for_j_2
+			_2 = i
+			read _3 _2
+			_4 = 20
+			_3 *= _4
+			_2 = j
+			read _4 _2
+			_3 += _4
+			
+			_4 = snake
+			_4 += _3
+			
+			read _5 _4
+			
+			
+			_6 = #w
+			
+			_2 = 0
+			_2 == _5
+			! _2
+			jumpif label_is0 _2
+			_6 = 0
+			label_is0
+			
+			_2 = 13
+			_2 == _5
+			! _2
+			jumpif label_is15 _2
+			_6 = #b
+			label_is15
+			
+			_2 = map
+			_2 += _3
+			write _6 _2
+			
+			
+			_2 = j
+			read _3 _2
+			_2 = 1
+			_3 += _2
+			_2 = j
+			write _3 _2
+			_2 = 19
+			_3 < _2
+		jumpif label_for_j_2 _3
+		
+		_2 = i
+		read _3 _2
+		_2 = 1
+		_3 += _2
+		_2 = i
+		write _3 _2
+		_2 = 19
+		_3 < _2
+	jumpif label_for_i_2 _3
+
+
+	
+	
+	_2 = score
+	read _3 _2
+	_4 = #0
+	_5 = 100
+	label_score_100
+		_2 = _5
+		_6 = 1
+		_2 -= _6
+		_2 < _3
+		! _2
+		jumpif label_end_score_100 _2
+		_4 += _6
+		_3 -= _5
+	jump label_score_100
+	label_end_score_100
+	_2 = map
+	_5 = 15
+	_5 += _2
+	write _4 _5
+	
+	_4 = #0
+	_5 = 10
+	label_score_10
+		_2 = _5
+		_6 = 1
+		_2 -= _6
+		_2 < _3
+		! _2
+		jumpif label_end_score_10 _2
+		_4 += _6
+		_3 -= _5
+	jump label_score_10
+	label_end_score_10
+	_2 = map
+	_5 = 16
+	_5 += _2
+	write _4 _5
+	
+	_4 = #0
+	_5 = 1
+	label_score_1
+		_2 = _5
+		_6 = 1
+		_2 -= _6
+		_2 < _3
+		! _2
+		jumpif label_end_score_1 _2
+		_4 += _6
+		_3 -= _5
+	jump label_score_1
+	label_end_score_1
+	_2 = map
+	_5 = 17
+	_5 += _2
+	write _4 _5
+
+
+	_2 = 1
+	_3 = 0
+	label_gpu
+		_4 = map
+		_4 += _3
+		read _5 _4
+		gpu _3 _5
+		_3 += _2
+		_4 = 399
+		_4 < _3
+		! _4
+	jumpif label_gpu _4
+
+	label_wait_1
+	_2 = _0
+	_3 = 0
+	_2 == _3
+	! _2
+	jumpif label_wait_1 _2
+	
+	label_wait_2
+	_2 = _0
+	_3 = 0
+	_2 == _3
+	! _2
+	jumpif label_wait_2 _2
+
+jump label_big

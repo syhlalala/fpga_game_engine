@@ -1,0 +1,78 @@
+
+end
+
+_2 = 0
+
+label_big
+	_3 = _2
+	
+	_4 = 400
+	_2 += _4
+	
+
+	_4 = _1
+	jumpif label_if_1 _4
+		_5 = 1
+		_2 -= _5
+	label_if_1
+
+	_5 = 1
+	_4 >>= _5
+	jumpif label_if_2 _4
+		_5 = 1
+		_2 += _5
+	label_if_2
+
+	_5 = 1
+	_4 >>= _5
+	jumpif label_if_3 _4
+		_5 = 20
+		_2 -= _5
+	label_if_3
+
+	_5 = 1
+	_4 >>= _5
+	jumpif label_if_4 _4
+		_5 = 20
+		_2 += _5
+	label_if_4
+
+
+	_4 = 399
+	_4 < _2
+	! _4
+	jumpif label_if_5 _4
+		_4 = 400
+		_2 -= _4
+	label_if_5
+
+	_4 = 399
+	_4 < _2
+	! _4
+	jumpif label_if_6 _4
+		_4 = 400
+		_2 -= _4
+	label_if_6
+
+	
+	_4 = 0
+	gpu _3 _4
+	_4 = #w
+	gpu _2 _4
+
+	label_wait_1 
+		_3 = _0
+		_4 = 0
+		_4 == _3
+		! _4
+	jumpif label_wait_1 _4
+
+	label_wait_2 
+		_3 = _0
+		_4 = 0
+		_4 == _3
+		! _4
+	jumpif label_wait_2 _4
+	
+
+jump label_big

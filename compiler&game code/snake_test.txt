@@ -1,0 +1,67 @@
+i 1
+j 1
+k 1
+map 400
+
+end
+
+_3 = i
+_4 = 0
+write _4 _3
+
+
+label_for_i_1
+
+	_3 = i
+	read _2 _3
+
+	_4 = 0
+	_3 = j
+	write _4 _3
+	label_for_j_1
+		_3 = j
+		read _4 _3
+		
+		_3 = 20
+		_3 *= _2
+		_3 += _4
+		
+		_5 = map
+		_3 += _5
+		
+		write _4 _3
+		
+		_3 = 1
+		_4 += _3
+		_3 = j
+		write _4 _3
+		
+		_5 = 20
+		_4 < _5
+		
+	jumpif label_for_j_1 _4
+	
+	_3 = 1
+	_2 += _3
+	_3 = i
+	write _2 _3
+	
+	_5 = 20
+	_2 < _5
+jumpif label_for_i_1 _2
+
+_3 = 0
+_2 = 1
+label_for_gpu
+	_4 = map
+	_4 += _3
+	read _5 _4
+	gpu _3 _3
+	_3 += _2
+	_4 = 399
+	_4 < _3
+	! _4
+jumpif label_for_gpu _4
+
+label_dead
+jump label_dead

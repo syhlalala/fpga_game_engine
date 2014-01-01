@@ -1,0 +1,13 @@
+a 1
+b 1
+c 1
+end
+
+label_1
+_4 = a
+read _3 _4
+_2 = 1000
+_3 += _2
+write _3 _4
+jumpif label_1 _3
+jump label_1

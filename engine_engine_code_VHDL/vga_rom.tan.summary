@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.091 ns
+From           : in_command[10]
+To             : ram_gpu_d:u3|ram_gpu:ram|altsyncram:altsyncram_component|altsyncram_74d1:auto_generated|ram_block1a0~porta_address_reg8
+From Clock     : --
+To Clock       : in_clock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 20.188 ns
+From           : vga640480:u1|vector_x[5]
+To             : r[2]
+From Clock     : clk_0
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -1.281 ns
+From           : in_write_addr[4]
+To             : ram_gpu_d:u3|ram_gpu:ram|altsyncram:altsyncram_component|altsyncram_74d1:auto_generated|ram_block1a0~porta_address_reg4
+From Clock     : --
+To Clock       : in_clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk_0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 125.45 MHz ( period = 7.971 ns )
+From           : vga640480:u1|vector_x[2]
+To             : v_rom:u2|altsyncram:altsyncram_component|altsyncram_o071:auto_generated|ram_block1a2~porta_address_reg2
+From Clock     : clk_0
+To Clock       : clk_0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'in_clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 163.03 MHz ( period = 6.134 ns )
+From           : ram_gpu_d:u3|ram_gpu:ram|altsyncram:altsyncram_component|altsyncram_74d1:auto_generated|ram_block1a0~porta_datain_reg5
+To             : ram_gpu_d:u3|ram_gpu:ram|altsyncram:altsyncram_component|altsyncram_74d1:auto_generated|ram_block1a5~porta_memory_reg0
+From Clock     : in_clock
+To Clock       : in_clock
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk_0'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : v_rom:u2|altsyncram:altsyncram_component|altsyncram_o071:auto_generated|q_a[1]
+To             : vga640480:u1|r1[1]
+From Clock     : clk_0
+To Clock       : clk_0
+Failed Paths   : 9
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 9
+
+--------------------------------------------------------------------------------------
+

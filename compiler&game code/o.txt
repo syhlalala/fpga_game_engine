@@ -1,0 +1,953 @@
+label_program
+label_init
+rl 2 0
+rh 2 0
+rl 3 0
+rh 3 0
+label_empty
+write 3 2
+label_empty
+label_for_i_1
+rl 2 0
+rh 2 0
+label_empty
+read 3 2
+label_empty
+rl 4 20
+rh 4 20
+add 4 3
+rl 2 4
+rh 2 4
+add 4 2
+rl 2 27
+rh 2 27
+label_empty
+write 2 4
+label_empty
+rl 4 380
+rh 4 380
+add 4 3
+rl 2 4
+rh 2 4
+add 4 2
+rl 2 27
+rh 2 27
+label_empty
+write 2 4
+label_empty
+rl 2 0
+rh 2 0
+eq 2 3
+rl 7 label_endofnot0
+rh 7 label_endofnot0
+jumpif 7 2
+rl 4 20
+rh 4 20
+mul 4 3
+rl 2 4
+rh 2 4
+add 4 2
+rl 2 27
+rh 2 27
+label_empty
+write 2 4
+label_empty
+rl 2 19
+rh 2 19
+add 4 2
+rl 2 27
+rh 2 27
+label_empty
+write 2 4
+label_empty
+label_endofnot0
+rl 2 1
+rh 2 1
+add 3 2
+rl 2 0
+rh 2 0
+label_empty
+write 3 2
+label_empty
+rl 2 20
+rh 2 20
+sml 3 2
+rl 7 label_for_i_1
+rh 7 label_for_i_1
+jumpif 7 3
+rl 4 4
+rh 4 4
+rl 3 2
+rh 3 2
+add 3 4
+rl 2 19
+rh 2 19
+label_empty
+write 2 3
+label_empty
+rl 3 3
+rh 3 3
+add 3 4
+rl 2 3
+rh 2 3
+label_empty
+write 2 3
+label_empty
+rl 3 4
+rh 3 4
+add 3 4
+rl 2 15
+rh 2 15
+label_empty
+write 2 3
+label_empty
+rl 3 5
+rh 3 5
+add 3 4
+rl 2 18
+rh 2 18
+label_empty
+write 2 3
+label_empty
+rl 3 6
+rh 3 6
+add 3 4
+rl 2 5
+rh 2 5
+label_empty
+write 2 3
+label_empty
+rl 4 404
+rh 4 404
+rl 3 209
+rh 3 209
+add 3 4
+rl 2 7
+rh 2 7
+label_empty
+write 2 3
+label_empty
+rl 3 210
+rh 3 210
+add 3 4
+rl 2 3
+rh 2 3
+label_empty
+write 2 3
+label_empty
+rl 3 211
+rh 3 211
+add 3 4
+rl 2 11
+rh 2 11
+label_empty
+write 2 3
+label_empty
+rl 2 806
+rh 2 806
+rl 3 1
+rh 3 1
+label_empty
+write 3 2
+label_empty
+label_big
+rl 2 806
+rh 2 806
+label_empty
+read 3 2
+label_empty
+rl 7 label_game_start
+rh 7 label_game_start
+jumpif 7 3
+rl 6 0
+rh 6 0
+rl 2 0
+rh 2 0
+rl 3 2
+rh 3 2
+label_empty
+write 3 2
+label_empty
+label_for_i_3
+rl 2 1
+rh 2 1
+rl 3 1
+rh 3 1
+label_empty
+write 3 2
+label_empty
+label_for_j_3
+rl 2 0
+rh 2 0
+label_empty
+read 3 2
+label_empty
+rl 4 20
+rh 4 20
+mul 3 4
+rl 2 1
+rh 2 1
+label_empty
+read 4 2
+label_empty
+add 3 4
+rl 4 404
+rh 4 404
+add 3 4
+label_empty
+read 4 3
+label_empty
+rl 2 13
+rh 2 13
+eq 2 4
+add 6 2
+rl 2 4
+rh 2 4
+sml 2 4
+rl 3 9
+rh 3 9
+grt 3 4
+and 2 3
+not 2
+rl 7 label_is_head
+rh 7 label_is_head
+jumpif 7 2
+rl 2 0
+rh 2 0
+label_empty
+read 5 2
+label_empty
+rl 4 20
+rh 4 20
+mul 5 4
+rl 2 1
+rh 2 1
+label_empty
+read 4 2
+label_empty
+add 5 4
+rl 2 804
+rh 2 804
+label_empty
+write 5 2
+label_empty
+label_is_head
+rl 2 0
+rh 2 0
+label_empty
+read 3 2
+label_empty
+rl 4 20
+rh 4 20
+mul 3 4
+rl 2 1
+rh 2 1
+label_empty
+read 4 2
+label_empty
+add 3 4
+rl 4 404
+rh 4 404
+add 3 4
+label_empty
+read 4 3
+label_empty
+rl 2 8
+rh 2 8
+sml 2 4
+rl 3 13
+rh 3 13
+grt 3 4
+and 2 3
+not 2
+rl 7 label_is_tail
+rh 7 label_is_tail
+jumpif 7 2
+rl 2 0
+rh 2 0
+label_empty
+read 5 2
+label_empty
+rl 4 20
+rh 4 20
+mul 5 4
+rl 2 1
+rh 2 1
+label_empty
+read 4 2
+label_empty
+add 5 4
+rl 2 805
+rh 2 805
+label_empty
+write 5 2
+label_empty
+label_is_tail
+rl 2 1
+rh 2 1
+label_empty
+read 3 2
+label_empty
+rl 2 1
+rh 2 1
+add 3 2
+rl 2 1
+rh 2 1
+label_empty
+write 3 2
+label_empty
+rl 2 19
+rh 2 19
+sml 3 2
+rl 7 label_for_j_3
+rh 7 label_for_j_3
+jumpif 7 3
+rl 2 0
+rh 2 0
+label_empty
+read 3 2
+label_empty
+rl 2 1
+rh 2 1
+add 3 2
+rl 2 0
+rh 2 0
+label_empty
+write 3 2
+label_empty
+rl 2 19
+rh 2 19
+sml 3 2
+rl 7 label_for_i_3
+rh 7 label_for_i_3
+jumpif 7 3
+rl 2 804
+rh 2 804
+label_empty
+read 5 2
+label_empty
+rl 2 404
+rh 2 404
+add 2 5
+label_empty
+read 3 2
+label_empty
+cpy 2 1
+rl 7 label_left
+rh 7 label_left
+jumpif 7 2
+rl 4 8
+rh 4 8
+eq 4 3
+rl 7 label_left
+rh 7 label_left
+jumpif 7 4
+rl 3 7
+rh 3 7
+label_left
+rl 4 1
+rh 4 1
+shr 2 4
+rl 7 label_right
+rh 7 label_right
+jumpif 7 2
+rl 4 7
+rh 4 7
+eq 4 3
+rl 7 label_right
+rh 7 label_right
+jumpif 7 4
+rl 3 8
+rh 3 8
+label_right
+rl 4 1
+rh 4 1
+shr 2 4
+rl 7 label_up
+rh 7 label_up
+jumpif 7 2
+rl 4 6
+rh 4 6
+eq 4 3
+rl 7 label_up
+rh 7 label_up
+jumpif 7 4
+rl 3 5
+rh 3 5
+label_up
+rl 4 1
+rh 4 1
+shr 2 4
+rl 7 label_down
+rh 7 label_down
+jumpif 7 2
+rl 4 5
+rh 4 5
+eq 4 3
+rl 7 label_down
+rh 7 label_down
+jumpif 7 4
+rl 3 6
+rh 3 6
+label_down
+rl 2 404
+rh 2 404
+add 2 5
+label_empty
+write 3 2
+label_empty
+cpy 4 5
+rl 2 5
+rh 2 5
+eq 2 3
+not 2
+rl 7 label_up1
+rh 7 label_up1
+jumpif 7 2
+rl 2 20
+rh 2 20
+sub 4 2
+label_up1
+rl 2 6
+rh 2 6
+eq 2 3
+not 2
+rl 7 label_down1
+rh 7 label_down1
+jumpif 7 2
+rl 2 20
+rh 2 20
+add 4 2
+label_down1
+rl 2 7
+rh 2 7
+eq 2 3
+not 2
+rl 7 label_left1
+rh 7 label_left1
+jumpif 7 2
+rl 2 1
+rh 2 1
+sub 4 2
+label_left1
+rl 2 8
+rh 2 8
+eq 2 3
+not 2
+rl 7 label_right1
+rh 7 label_right1
+jumpif 7 2
+rl 2 1
+rh 2 1
+add 4 2
+label_right1
+rl 2 4
+rh 2 4
+add 2 4
+label_empty
+read 7 2
+label_empty
+rl 2 0
+rh 2 0
+rl 3 29
+rh 3 29
+eq 2 7
+eq 3 7
+or 2 3
+not 2
+rl 7 label_game_over
+rh 7 label_game_over
+jumpif 7 2
+cpy 7 3
+rl 2 404
+rh 2 404
+add 2 5
+label_empty
+read 3 2
+label_empty
+rl 2 404
+rh 2 404
+add 2 4
+label_empty
+write 3 2
+label_empty
+rl 4 4
+rh 4 4
+sub 3 4
+rl 2 404
+rh 2 404
+add 2 5
+label_empty
+write 3 2
+label_empty
+cpy 3 7
+rl 2 3
+rh 2 3
+label_empty
+read 4 2
+label_empty
+add 4 3
+label_empty
+write 4 2
+label_empty
+rl 7 label_game_start_end
+rh 7 label_game_start_end
+jumpif 7 3
+rl 7 label_game_over_end
+rh 7 label_game_over_end
+jump 7
+label_game_over
+rl 2 806
+rh 2 806
+rl 3 1
+rh 3 1
+label_empty
+write 3 2
+label_empty
+rl 7 label_game_start_end
+rh 7 label_game_start_end
+jump 7
+label_game_over_end
+rl 2 805
+rh 2 805
+label_empty
+read 5 2
+label_empty
+rl 2 404
+rh 2 404
+add 2 5
+label_empty
+read 3 2
+label_empty
+cpy 4 5
+rl 2 9
+rh 2 9
+eq 2 3
+not 2
+rl 7 label_up3
+rh 7 label_up3
+jumpif 7 2
+rl 2 20
+rh 2 20
+sub 4 2
+label_up3
+rl 2 10
+rh 2 10
+eq 2 3
+not 2
+rl 7 label_down3
+rh 7 label_down3
+jumpif 7 2
+rl 2 20
+rh 2 20
+add 4 2
+label_down3
+rl 2 11
+rh 2 11
+eq 2 3
+not 2
+rl 7 label_left3
+rh 7 label_left3
+jumpif 7 2
+rl 2 1
+rh 2 1
+sub 4 2
+label_left3
+rl 2 12
+rh 2 12
+eq 2 3
+not 2
+rl 7 label_right3
+rh 7 label_right3
+jumpif 7 2
+rl 2 1
+rh 2 1
+add 4 2
+label_right3
+rl 2 404
+rh 2 404
+add 2 4
+label_empty
+read 3 2
+label_empty
+rl 2 8
+rh 2 8
+add 3 2
+rl 2 404
+rh 2 404
+add 2 4
+label_empty
+write 3 2
+label_empty
+rl 2 404
+rh 2 404
+add 2 5
+rl 7 label_food
+rh 7 label_food
+jumpif 7 6
+rl 3 13
+rh 3 13
+rl 7 label_food_else
+rh 7 label_food_else
+jump 7
+label_food
+rl 3 0
+rh 3 0
+label_food_else
+label_empty
+write 3 2
+label_empty
+rl 7 label_game_start_end
+rh 7 label_game_start_end
+jump 7
+label_game_start
+rl 3 15
+rh 3 15
+cpy 3 1
+rl 7 label_game_start_end
+rh 7 label_game_start_end
+jumpif 7 3
+rl 2 806
+rh 2 806
+rl 3 0
+rh 3 0
+label_empty
+write 3 2
+label_empty
+rl 2 0
+rh 2 0
+rl 3 2
+rh 3 2
+label_empty
+write 3 2
+label_empty
+label_for_i_4
+rl 2 1
+rh 2 1
+rl 3 1
+rh 3 1
+label_empty
+write 3 2
+label_empty
+label_for_j_4
+rl 2 0
+rh 2 0
+label_empty
+read 3 2
+label_empty
+rl 4 20
+rh 4 20
+mul 3 4
+rl 2 1
+rh 2 1
+label_empty
+read 4 2
+label_empty
+add 3 4
+rl 4 404
+rh 4 404
+add 4 3
+rl 2 0
+rh 2 0
+label_empty
+write 2 4
+label_empty
+rl 2 1
+rh 2 1
+label_empty
+read 3 2
+label_empty
+rl 2 1
+rh 2 1
+add 3 2
+rl 2 1
+rh 2 1
+label_empty
+write 3 2
+label_empty
+rl 2 19
+rh 2 19
+sml 3 2
+rl 7 label_for_j_4
+rh 7 label_for_j_4
+jumpif 7 3
+rl 2 0
+rh 2 0
+label_empty
+read 3 2
+label_empty
+rl 2 1
+rh 2 1
+add 3 2
+rl 2 0
+rh 2 0
+label_empty
+write 3 2
+label_empty
+rl 2 19
+rh 2 19
+sml 3 2
+rl 7 label_for_i_4
+rh 7 label_for_i_4
+jumpif 7 3
+rl 4 404
+rh 4 404
+rl 3 209
+rh 3 209
+add 3 4
+rl 2 7
+rh 2 7
+label_empty
+write 2 3
+label_empty
+rl 3 210
+rh 3 210
+add 3 4
+rl 2 3
+rh 2 3
+label_empty
+write 2 3
+label_empty
+rl 3 211
+rh 3 211
+add 3 4
+rl 2 11
+rh 2 11
+label_empty
+write 2 3
+label_empty
+label_game_start_end
+rl 2 0
+rh 2 0
+rl 3 2
+rh 3 2
+label_empty
+write 3 2
+label_empty
+label_for_i_2
+rl 2 1
+rh 2 1
+rl 3 1
+rh 3 1
+label_empty
+write 3 2
+label_empty
+label_for_j_2
+rl 2 0
+rh 2 0
+label_empty
+read 3 2
+label_empty
+rl 4 20
+rh 4 20
+mul 3 4
+rl 2 1
+rh 2 1
+label_empty
+read 4 2
+label_empty
+add 3 4
+rl 4 404
+rh 4 404
+add 4 3
+label_empty
+read 5 4
+label_empty
+rl 6 30
+rh 6 30
+rl 2 0
+rh 2 0
+eq 2 5
+not 2
+rl 7 label_is0
+rh 7 label_is0
+jumpif 7 2
+rl 6 0
+rh 6 0
+label_is0
+rl 2 13
+rh 2 13
+eq 2 5
+not 2
+rl 7 label_is15
+rh 7 label_is15
+jumpif 7 2
+rl 6 29
+rh 6 29
+label_is15
+rl 2 4
+rh 2 4
+add 2 3
+label_empty
+write 6 2
+label_empty
+rl 2 1
+rh 2 1
+label_empty
+read 3 2
+label_empty
+rl 2 1
+rh 2 1
+add 3 2
+rl 2 1
+rh 2 1
+label_empty
+write 3 2
+label_empty
+rl 2 19
+rh 2 19
+sml 3 2
+rl 7 label_for_j_2
+rh 7 label_for_j_2
+jumpif 7 3
+rl 2 0
+rh 2 0
+label_empty
+read 3 2
+label_empty
+rl 2 1
+rh 2 1
+add 3 2
+rl 2 0
+rh 2 0
+label_empty
+write 3 2
+label_empty
+rl 2 19
+rh 2 19
+sml 3 2
+rl 7 label_for_i_2
+rh 7 label_for_i_2
+jumpif 7 3
+rl 2 3
+rh 2 3
+label_empty
+read 3 2
+label_empty
+rl 4 48
+rh 4 48
+rl 5 100
+rh 5 100
+label_score_100
+cpy 2 5
+rl 6 1
+rh 6 1
+sub 2 6
+sml 2 3
+not 2
+rl 7 label_end_score_100
+rh 7 label_end_score_100
+jumpif 7 2
+add 4 6
+sub 3 5
+rl 7 label_score_100
+rh 7 label_score_100
+jump 7
+label_end_score_100
+rl 2 4
+rh 2 4
+rl 5 15
+rh 5 15
+add 5 2
+label_empty
+write 4 5
+label_empty
+rl 4 48
+rh 4 48
+rl 5 10
+rh 5 10
+label_score_10
+cpy 2 5
+rl 6 1
+rh 6 1
+sub 2 6
+sml 2 3
+not 2
+rl 7 label_end_score_10
+rh 7 label_end_score_10
+jumpif 7 2
+add 4 6
+sub 3 5
+rl 7 label_score_10
+rh 7 label_score_10
+jump 7
+label_end_score_10
+rl 2 4
+rh 2 4
+rl 5 16
+rh 5 16
+add 5 2
+label_empty
+write 4 5
+label_empty
+rl 4 48
+rh 4 48
+rl 5 1
+rh 5 1
+label_score_1
+cpy 2 5
+rl 6 1
+rh 6 1
+sub 2 6
+sml 2 3
+not 2
+rl 7 label_end_score_1
+rh 7 label_end_score_1
+jumpif 7 2
+add 4 6
+sub 3 5
+rl 7 label_score_1
+rh 7 label_score_1
+jump 7
+label_end_score_1
+rl 2 4
+rh 2 4
+rl 5 17
+rh 5 17
+add 5 2
+label_empty
+write 4 5
+label_empty
+rl 2 1
+rh 2 1
+rl 3 0
+rh 3 0
+label_gpu
+rl 4 4
+rh 4 4
+add 4 3
+label_empty
+read 5 4
+label_empty
+label_empty
+gpu 3 5
+label_empty
+add 3 2
+rl 4 399
+rh 4 399
+sml 4 3
+not 4
+rl 7 label_gpu
+rh 7 label_gpu
+jumpif 7 4
+label_wait_1
+cpy 2 0
+rl 3 0
+rh 3 0
+eq 2 3
+not 2
+rl 7 label_wait_1
+rh 7 label_wait_1
+jumpif 7 2
+label_wait_2
+cpy 2 0
+rl 3 0
+rh 3 0
+eq 2 3
+not 2
+rl 7 label_wait_2
+rh 7 label_wait_2
+jumpif 7 2
+rl 7 label_big
+rh 7 label_big
+jump 7

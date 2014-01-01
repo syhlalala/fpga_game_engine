@@ -1,0 +1,25 @@
+
+State Machine - |top_ge|top:key_board|state
+Name state.blank_ready state.blank state.on_up state.on_right state.on_left state.on_down 
+state.on_down 0 0 0 0 0 0 
+state.on_left 0 0 0 0 1 1 
+state.on_right 0 0 0 1 0 1 
+state.on_up 0 0 1 0 0 1 
+state.blank 0 1 0 0 0 1 
+state.blank_ready 1 0 0 0 0 1 
+
+State Machine - |top_ge|top:key_board|Keyboard:u0|state
+Name state.finish state.stop state.parity state.d7 state.d6 state.d5 state.d4 state.d3 state.d2 state.d1 state.d0 state.start state.delay 
+state.delay 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.start 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.d0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.d1 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.d2 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.d3 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.d4 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.d5 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.d6 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.d7 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.parity 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.stop 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.finish 1 0 0 0 0 0 0 0 0 0 0 0 1 

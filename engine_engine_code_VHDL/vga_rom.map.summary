@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed May 23 11:40:53 2012
+Quartus II Version : 8.0 Build 215 05/29/2008 SJ Full Version
+Revision Name : vga_rom
+Top-level Entity Name : vga_rom
+Family : Cyclone II
+Total logic elements : 112
+    Total combinational functions : 112
+    Dedicated logic registers : 40
+Total registers : 40
+Total pins : 63
+Total virtual pins : 0
+Total memory bits : 39,936
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

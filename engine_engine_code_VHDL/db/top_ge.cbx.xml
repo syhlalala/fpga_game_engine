@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="top_ge">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|cpu:cpu_m|ram_prog:pram|ram_tprog:ram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3md1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|vga_rom:vga|ram_gpu_d:u3|ram_gpu:ram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_74d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|cpu:cpu_m|alu:comp|lpm_mult:Mult0" CBX_FILE_NAME="mult_9v01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|cpu:cpu_m|ram_data:dram|ram_templet:ram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_20b1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|vga_rom:vga|v_rom:u2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_o071.tdf"/>
+	</PROJECT>
+	<PROJECT NAME="test1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|cpu:cpu_m|ram_prog:pram|ram_tprog:ram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3md1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|vga_rom:vga|ram_gpu_d:u3|ram_gpu:ram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_74d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|cpu:cpu_m|alu:comp|lpm_mult:Mult0" CBX_FILE_NAME="mult_9v01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|cpu:cpu_m|ram_data:dram|ram_templet:ram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_20b1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_ge|vga_rom:vga|v_rom:u2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_o071.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

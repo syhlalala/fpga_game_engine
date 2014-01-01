@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May 23 11:40:59 2012
+Quartus II Version : 8.0 Build 215 05/29/2008 SJ Full Version
+Revision Name : vga_rom
+Top-level Entity Name : vga_rom
+Family : Cyclone II
+Device : EP2C20Q240C8
+Timing Models : Final
+Total logic elements : 112 / 18,752 ( < 1 % )
+    Total combinational functions : 112 / 18,752 ( < 1 % )
+    Dedicated logic registers : 40 / 18,752 ( < 1 % )
+Total registers : 40
+Total pins : 63 / 142 ( 44 % )
+Total virtual pins : 0
+Total memory bits : 39,936 / 239,616 ( 17 % )
+Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

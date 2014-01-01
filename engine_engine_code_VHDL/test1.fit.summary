@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Jun 09 19:28:42 2012
+Quartus II Version : 8.0 Build 215 05/29/2008 SJ Full Version
+Revision Name : test1
+Top-level Entity Name : top_ge
+Family : Cyclone II
+Device : EP2C20Q240C8
+Timing Models : Final
+Total logic elements : 920 / 18,752 ( 5 % )
+    Total combinational functions : 911 / 18,752 ( 5 % )
+    Dedicated logic registers : 205 / 18,752 ( 1 % )
+Total registers : 205
+Total pins : 71 / 142 ( 50 % )
+Total virtual pins : 0
+Total memory bits : 203,776 / 239,616 ( 85 % )
+Embedded Multiplier 9-bit elements : 2 / 52 ( 4 % )
+Total PLLs : 0 / 4 ( 0 % )

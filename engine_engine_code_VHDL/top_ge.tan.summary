@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.339 ns
+From           : filter_clock
+To             : top:key_board|Keyboard:u0|clk1
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 21.414 ns
+From           : vga_rom:vga|vga_640480:u1|vector_x[6]
+To             : seg_5[1]
+From Clock     : clock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -4.950 ns
+From           : keyboard
+To             : top:key_board|Keyboard:u0|data
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 22.00 MHz ( period = 45.454 ns )
+From           : cpu:cpu_m|ram_prog:pram|ram_tprog:ram|altsyncram:altsyncram_component|altsyncram_3md1:auto_generated|ram_block1a14~porta_address_reg10
+To             : cpu:cpu_m|register_device:reg|r4[3]
+From Clock     : clock
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'filter_clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 221.73 MHz ( period = 4.510 ns )
+From           : top:key_board|counter[1]
+To             : top:key_board|state.on_up
+From Clock     : filter_clock
+To Clock       : filter_clock
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clock'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : top:key_board|Keyboard:u0|code[4]
+To             : top:key_board|Keyboard:u0|scancode[4]
+From Clock     : clock
+To Clock       : clock
+Failed Paths   : 17
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 17
+
+--------------------------------------------------------------------------------------
+
